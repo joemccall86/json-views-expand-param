@@ -1,0 +1,9 @@
+import json.views.expand.param.Book
+
+model {
+    Book book
+}
+
+json g.render(book) {
+    expandFromTemplate params.expand
+}

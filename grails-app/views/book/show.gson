@@ -1,0 +1,10 @@
+import json.views.expand.param.Book
+
+model {
+    Book book
+}
+
+json {
+    expandFromView params.expand
+    book tmpl.book(book)
+}
